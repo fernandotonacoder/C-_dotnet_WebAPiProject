@@ -1,0 +1,15 @@
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/bin/Debug/net6.0/WebApiProject
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/bin/Debug/net6.0/WebApiProject.deps.json
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/bin/Debug/net6.0/WebApiProject.runtimeconfig.json
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/bin/Debug/net6.0/WebApiProject.dll
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/bin/Debug/net6.0/ref/WebApiProject.dll
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/bin/Debug/net6.0/WebApiProject.pdb
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/obj/Debug/net6.0/WebApiProject.csproj.AssemblyReference.cache
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/obj/Debug/net6.0/WebApiProject.GeneratedMSBuildEditorConfig.editorconfig
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/obj/Debug/net6.0/WebApiProject.AssemblyInfoInputs.cache
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/obj/Debug/net6.0/WebApiProject.AssemblyInfo.cs
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/obj/Debug/net6.0/WebApiProject.csproj.CoreCompileInputs.cache
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/obj/Debug/net6.0/WebApiProject.dll
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/obj/Debug/net6.0/ref/WebApiProject.dll
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/obj/Debug/net6.0/WebApiProject.pdb
+/home/fernandotona/Downloads/Csharp_dotnet_WebAPiProject/WebApiProject/obj/Debug/net6.0/WebApiProject.genruntimeconfig.cache

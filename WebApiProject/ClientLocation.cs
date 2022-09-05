@@ -1,4 +1,3 @@
-
 using System.Text.Json;
 
 public class ClientLocation {
@@ -17,45 +16,47 @@ private double getClientLatitude(string clientPostcode)
 {
     this.clientPostcode = clientPostcode;
 
-         HttpClient client = new HttpClient();
-            var responseTask = client.GetAsync("http://api.postcodes.io/postcodes/" + clientPostcode);
-            responseTask.Wait();
-            if(responseTask.IsCompleted)
-            {
-                var result = responseTask.Result;
-                if(result.IsSuccessStatusCode)
-                {
-                    var message = result.Content.ReadAsStringAsync();
-                    message.Wait();
-                    var apiResponse = JsonSerializer.Deserialize<DataStructure>(message.Result);
-                    return apiResponse.Result.Latitude;
-                }
-            }
-            return double.NaN;
-            }
+    HttpClient client = new HttpClient();
+    var responseTask = client.GetAsync("http://api.postcodes.io/postcodes/" + clientPostcode);
+    responseTask.Wait();
+
+    if(responseTask.IsCompleted)
+    {
+        var result = responseTask.Result;
+        if(result.IsSuccessStatusCode)
+        {
+        var message = result.Content.ReadAsStringAsync();
+        message.Wait();
+        var apiResponse = JsonSerializer.Deserialize<DataStructure>(message.Result);
+        return apiResponse.Result.Latitude;
+        }
+    }
+    return double.NaN;
+}
 
 private double getClientLongitude(string clientPostcode)
 {
     this.clientPostcode = clientPostcode;
-         HttpClient client = new HttpClient();
-            var responseTask = client.GetAsync("http://api.postcodes.io/postcodes/" + clientPostcode);
-            responseTask.Wait();
-            if(responseTask.IsCompleted)
-            {
-                var result = responseTask.Result;
-                if(result.IsSuccessStatusCode)
-                {
-                    var message = result.Content.ReadAsStringAsync();
-                    message.Wait();
-                    var apiResponse = JsonSerializer.Deserialize<DataStructure>(message.Result);
-                    return apiResponse.Result.Longitude;
-                }
-            }
-            return double.NaN;
-            }
+    HttpClient client = new HttpClient();
+    var responseTask = client.GetAsync("http://api.postcodes.io/postcodes/" + clientPostcode);
+    responseTask.Wait();
+    
+    if(responseTask.IsCompleted)
+    {
+        var result = responseTask.Result;
+        if(result.IsSuccessStatusCode)
+        {
+            var message = result.Content.ReadAsStringAsync();
+            message.Wait();
+            var apiResponse = JsonSerializer.Deserialize<DataStructure>(message.Result);
+            return apiResponse.Result.Longitude; 
+        }
+    }
+    return double.NaN;
+}
 
 // Get client distance from Heathrow airport in Kilometers
-public double getClientKMDistanceFromHeathrow()
+private double getClientKmDistanceFromHeathrow()
 {
     
     double clientLatitude = getClientLatitude(clientPostcode);
@@ -79,19 +80,19 @@ public double getClientKMDistanceFromHeathrow()
   }
 
 // Get client distance from Heathrow airport in Miles
-public double getClientMilesDistanceFromHeathrow()
+private double getClientMilesDistanceFromHeathrow()
 {
 
-double miles = getClientKMDistanceFromHeathrow() * 0.621371;
+double miles = getClientKmDistanceFromHeathrow() * 0.621371;
 return miles;
 }
 
 public string getClientDistanceFromHeathrow()
 {
     string message = "Given the client's postcode " + clientPostcode + ", his/her distance from Heathrow Airport is: \n"
-    + Math.Round(getClientKMDistanceFromHeathrow(), 2) + " kilometers / " + Math.Round(getClientMilesDistanceFromHeathrow(), 2) + " miles.";
+    + Math.Round(getClientKmDistanceFromHeathrow(), 2) + " kilometers / " + Math.Round(getClientMilesDistanceFromHeathrow(), 2) + " miles.";
 
     return message;
-
 }
+
 }

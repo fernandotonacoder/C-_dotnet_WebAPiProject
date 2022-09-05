@@ -1,7 +1,7 @@
 # **Simple WebApiProject in C#/.NET**
 ## Run instructions
 
-This program calculates the distance between a fake client/person's postcode location (just in the UK!!!) and Heathrow airport and returns it in kilometers and miles.
+This program calculates the distance between a fake client/person's postcode location (just in the UK!!!) and Heathrow airport and returns it in kilometers and miles, connecting to an [external WebAPI](https://api.postcodes.io/).
 
 It accepts one [postcode from the UK](https://ukpostcode.org/) as argument (case insensitive) for execution (avoid whitespaces).
 <br></br>
@@ -29,17 +29,17 @@ It accepts one [postcode from the UK](https://ukpostcode.org/) as argument (case
 
 `apt-cache search dotnet`
 
-Install latest dotnet sdk (or just runtime). For example, for ***sdk6.0***:
+Install the latest *dotnet sdk* (or just runtime). For example, for ***sdk6.0***:
 
 `sudo apt install dotnet-sdk6.0`
 
-- Open your *UNIX command line terminal* and go to the downloaded folder using `cd WebApiProject` .
+- Open your *UNIX command line terminal* inside of the cloned/downloaded directory *Csharp_dotnet_WebAPiProject*, then: `cd WebApiProject` .
 - Type `dotnet run [postcode_without_whitespaces]`.
 - Enjoy!
 
 ### **VS Code**
 
-- Open this folder/project in VS Code ([You need to install *dotnet*](https://docs.microsoft.com/en-us/dotnet/core/install/)).
+- Open the downloaded folder/project in VS Code ([You need to install *dotnet*](https://docs.microsoft.com/en-us/dotnet/core/install/)).
 - Open a terminal and run the following command `cd .\WebApiProject\`.
 - Then type `dotnet run [postcode_without_whitespaces]`.
 - Enjoy!
