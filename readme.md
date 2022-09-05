@@ -20,6 +20,8 @@ It accepts one [postcode from the UK](https://ukpostcode.org/) as argument (case
 - Enjoy!
 <br></br>
 
+For Windows I also recommend using [GitBash](https://git-scm.com/downloads).
+
 ### **GNU/Linux and MacOS**
 
 - You need *dotnet* installed in your system. [Check here how to install it if you haven't yet](https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu).
@@ -43,6 +45,13 @@ Install the latest *dotnet sdk* (or just runtime). For example, for ***sdk6.0***
 - Open a terminal and run the following command `cd .\WebApiProject\`.
 - Then type `dotnet run [postcode_without_whitespaces]`.
 - Enjoy!
+___
+
+### **Example** (Git Bash)
+
+<img src="resources\Windows_GitBash_example.png">
+
+
 
 ___
 Author: [Fernando Tona](https://www.linkedin.com/in/fernandotona/)
