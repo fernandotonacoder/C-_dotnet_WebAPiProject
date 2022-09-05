@@ -22,7 +22,7 @@ It accepts one [postcode from the UK](https://ukpostcode.org/) as argument (case
 
 ### **GNU/Linux and MacOS**
 
-- You need *dotnet* installed in your system. [Check here how to install it if you haven't installed it yet](https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu).
+- You need *dotnet* installed in your system. [Check here how to install it if you haven't yet](https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu).
 - For Debian/Ubuntu based distros I'd recommend you install *dotnet* via *apt package manager* rather than via *snap*:
 
 `sudo apt update`
