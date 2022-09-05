@@ -3,7 +3,7 @@
 
 This program calculates the distance between a fake client/person's postcode location (just in the UK!!!) and Heathrow airport and returns it in kilometers and miles.
 
-It accepts one postcode from the UK as argument (case insensitive) for execution (avoid whitespaces).
+It accepts one [postcode from the UK](https://ukpostcode.org/) as argument (case insensitive) for execution (avoid whitespaces).
 <br></br>
 
 ### **Windows CMD**
