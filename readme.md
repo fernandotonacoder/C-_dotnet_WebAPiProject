@@ -1,48 +1,48 @@
-# We are excited you are taking the time to solve our technical assignment! #
+# **Simple WebApiProject in C#/.NET**
+## Run instructions
 
-### Let’s pretend you are starting your first day with us. After you settle in, your first task will be assigned. Both Joseph (Product Owner) and Ness (Technical Lead) are ready to give you more details on your first task. ###
+This program calculates the distance between a fake client/person's postcode location (just in the UK!!!) and Heathrow airport and returns it in kilometers and miles.
 
-> Joseph - “Hi, I have your first task, excited?
+It accepts one postcode from the UK as argument (case insensitive) for execution (avoid whitespaces).
+<br></br>
 
-> We need to create a web application that allows you to find the addresses of our customers based on their postcodes. Multiple addresses will be searched, so it would be nice if we could add the history of the last 3 in the page. Finally, alongside the address, we need to display the distance in a straight line, from the customer location to London Heathrow airport (lat/long: 51.4700223,-0.4542955) this should be displayed in both kilometers and miles.”
+### **Windows CMD**
 
-> Ness - “Ok, I understand the request and I think I can provide some help. I’ve heard about https://postcodes.io/, and we can use it as web service where we can type the postcode and we get the address details back, alongside the latitude and longitude. As its straight line it should be very easy to calculate the distance between the airport and the customer address.
+- Open *Windows CMD* and go to *release(.exe)* folder using `cd [path to release(.exe)`.
+- Type `WebApiProject.exe [postcode_without_whitespaces]`.
+- Enjoy!
+<br></br>
 
-### A working example for the web service is: http://api.postcodes.io/postcodes/N76RS
+### **Windows PowerShell**
 
-## A few examples of valid postcodes in the UK are:
+- Open *Windows PowerShell* and go to *release(.exe)* folder using `cd [path to release(.exe)`.
+- Type `./WebApiProject.exe [postcode_without_whitespaces]`.
+- Enjoy!
+<br></br>
 
-| Index    | Postcode |          |
-|----------|----------|----------|
-| #1       | N76RS    |          |
-| #2       | SW46TA   |          |
-| #3       | SW1A     |          |
-| #4       | W1B3AG   |          |
-| #5       | PO63TD   |          |
+### **GNU/Linux and MacOS**
 
-     
-	     
-		 
+- You need *dotnet* installed in your system. [Check here how to install it if you haven't installed it yet](https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu).
+- For Debian/Ubuntu based distros I'd recommend you install *dotnet* via *apt package manager* rather than via *snap*:
 
-I would recommend a dotnet + react (or angular) application would be an excellent idea, but feel free to use other technologies/frameworks that help you achieve the goal. Remember the focus must be as much in having it working as it should to have a good user experience, bonus points if you are able to create tests (Unit, Integration, Automated) to help guarantee an excellent code quality. It is important the user understands all the functionalities we have to offer and is able to understand them correctly
+`sudo apt update`
 
-Once you are done please commit the code and create a Pull Request so we can code review it.”
+`apt-cache search dotnet`
 
-Now that the exercise has been explained, you can start working on it, we normally request for it to be uploaded into our git repository within 3 working days, but can be changed if you need more time to start. This task should take you no longer than 3 hours and needless to say should be totally completed by you, after all this is supposed to be a fun challenge! 
+Install latest dotnet sdk (or just runtime). For example, for ***sdk6.0***:
 
----
+`sudo apt install dotnet-sdk6.0`
 
-## We will provide you a git repository in bitbucket for the code to be uploaded. Please see the instructions below:
+- Open your *UNIX command line terminal* and go to the downloaded folder using `cd WebApiProject` .
+- Type `dotnet run [postcode_without_whitespaces]`.
+- Enjoy!
 
-Please sign up for an account on Bitbucket if you don't have one already. If you do, feel free to use your own login / profile.
+### **VS Code**
 
-If you're not familiar with GIT, use the Sourcetree client to get started or visit http://git-scm.com for the official git client.
+- Open this folder/project in VS Code ([You need to install *dotnet*](https://docs.microsoft.com/en-us/dotnet/core/install/)).
+- Open a terminal and run the following command `cd .\WebApiProject\`.
+- Then type `dotnet run [postcode_without_whitespaces]`.
+- Enjoy!
 
-Once you're done with your work, COMMIT and then PUSH (ie. send to bitbucket). The PUSH with notify us and we will review your work. Only push when you're done, and push once. This is to avoid us reviewing an incomplete submission.
-
----
-
-### We're here to help...
-Should you run into problems or have any questions - please get in touch with either your recruitment agent or with Renato Oliveira - renato.oliveira@craftablesoftware.com
-
-Good luck  
+___
+Author: [Fernando Tona](https://www.linkedin.com/in/fernandotona/)
