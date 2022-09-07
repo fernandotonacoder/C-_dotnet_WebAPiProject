@@ -44,12 +44,15 @@ Install the latest *dotnet sdk* (or just the runtime environment). For example, 
 - Type: `dotnet run [postcode_without_whitespaces]`.
 - Enjoy!
 
+<br></br>
+
 ### **VS Code**
 
 - Open the downloaded folder/project in VS Code ([You need to install *dotnet*](https://docs.microsoft.com/en-us/dotnet/core/install/)).
 - Open a terminal and run the following command `cd .\WebApiProject\`.
 - Then type: `dotnet run [postcode_without_whitespaces]`.
 - Enjoy!
+<br></br>
 ___
 
 ### **Example** (Git Bash)
